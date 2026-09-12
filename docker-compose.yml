@@ -1,0 +1,32 @@
+services:
+
+  backend:
+    build:
+      context: ./backend
+    container_name: agent-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Secrets are mounted read-only at runtime — never baked into the image.
+      - ./backend/.env:/app/.env:ro
+      - ./backend/credentials.json:/app/credentials.json:ro
+      - ./backend/token.json:/app/token.json:ro
+    restart: unless-stopped
+    networks:
+      - agent-network
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: agent-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - agent-network
+
+networks:
+  agent-network:
+    driver: bridge
