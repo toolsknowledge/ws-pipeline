@@ -17,3 +17,7 @@ frontend/.env
 .DS_Store
 .vscode/
 *.log
+
+*.pem
+deploy.txt
+*.sh
