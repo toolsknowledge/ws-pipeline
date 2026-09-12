@@ -1,0 +1,146 @@
+1) what is LLM - Basic
+
+2) what is MCP (Model Context protocol) - Basic
+
+3) what is LangGraph - Basic
+
+4) what is Agent
+
+5) Agent Development from end to end (ReactJS - FastAPI - Agent)
+
+
+LLM
+****
+    Large Language Model
+    LLM Knows everything
+
+        1) india pm ---
+
+        usa 
+
+        80's image
+
+        audio
+
+        video
+
+        cook chicken....
+
+        cook sweets....
+
+        OpenAI
+
+        Antropic
+
+        Gemini
+
+        DeepSeek
+
+        .....
+        ......
+        .....
+
+
+MCP 
+
+        Model Context protocol
+
+        LLM ---> External Resources (GitHub, Gmail, Yahoo Mail, www.vproskills.com,......)
+
+
+
+LLM
+****
+
+        knows everyting......
+
+        OpenAI, Antropic,...........
+
+
+LLM ----> External Services
+
+
+
+1) generate authenication credentials from google
+
+        https://console.cloud.google.com/
+
+
+2) agent-development
+        backend
+            credentials.json
+            .env (API key) (LLM)
+            requirements.txt
+            mcp_server.py (mcp server)
+                1) search_email()
+                        - connect to gmail (credentials.json)
+                        - read query from user (Ex. find email from gopal)
+                        - search in gmail inbox
+                        - find the last 50 emails
+                        - do proper validation
+                        - append all email to list
+                        - retutn list
+                2) search_google_drive()
+                        - connect to google drive (credentials.json)
+                        - read query from user (Ex. find email from gopal)
+                        - search in google drive
+                        - find the exact file
+                        - do proper validation
+                        - append all email to list
+                        - retutn list
+        
+                agent.py
+
+
+        Terminal: (powershell -- cmd)
+                > cd backend
+                python -m venv venv
+                source venv/bin/activate(mac)
+                venv\Scripts\activate (windows)
+                python -m pip install -r requirements.txt
+
+        > python agent.py 
+
+        http://0.0.0.0:8000
+ 
+nodejs (download).  (https://nodejs.org/en/download)
+
+        > node --version
+
+
+> agent-development
+        terminal:
+                > npm create vite@latest
+                frontend
+                reactjs
+                javascript
+                ---
+                ---
+                ---
+
+        src
+            App.jsx
+            App.css
+            logo.jpeg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

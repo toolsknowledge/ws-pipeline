@@ -1,0 +1,14 @@
+fastapi         # api calls GET,POST,PUT,DELETE
+uvicorn         # light weight server to run api calls
+python-dotenv   # read .env file
+openai          # open ai llm
+langchain
+langchain-core
+langchain-openai
+langgraph           # decides the required tool (framework) (library)
+langchain-mcp-adapters # connect to mcp server
+mcp                 # build mcp server
+google-api-python-client        # authentication (gmail & google drive)
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
